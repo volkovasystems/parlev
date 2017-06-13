@@ -47,6 +47,7 @@
 
 	@include:
 		{
+			"arid": "arid",
 			"arkount": "arkount",
 			"doubt": "doubt",
 			"falzy": "falzy",
@@ -56,6 +57,7 @@
 	@end-include
 */
 
+const arid = require( "arid" );
 const arkount = require( "arkount" );
 const doubt = require( "doubt" );
 const falzy = require( "falzy" );
@@ -80,6 +82,10 @@ const parlev = function parlev( parameter ){
 
 	if( !doubt( parameter, ARRAY ) ){
 		parameter = raze( parameter );
+	}
+
+	if( arid( parameter ) ){
+		return parameter;
 	}
 
 	let argument = firs( parameter );
