@@ -1,0 +1,44 @@
+{
+  "name": "parlev",
+  "version": "0.0.0",
+  "description": "Argument leveling.",
+  "main": "parlev.js",
+  "support": "parlev.support.js",
+  "deploy": "parlev.deploy.js",
+  "browser": "parlev.deploy.js",
+  "scripts": {
+    "build": "babel parlev.js --out-file parlev.support.js --source-maps && webpack --progress --display-modules",
+    "test": "mocha parlev-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volkovasystems/parlev.git"
+  },
+  "keywords": [
+    "argument",
+    "leveling",
+    "parlev"
+  ],
+  "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/volkovasystems/parlev/issues"
+  },
+  "homepage": "https://github.com/volkovasystems/parlev#readme",
+  "dependencies": {
+    "arkount": "^0.8.0",
+    "babel-runtime": "^6.23.0",
+    "doubt": "^0.27.0",
+    "falzy": "^0.20.0",
+    "firs": "^0.0.0",
+    "raze": "^0.30.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-latest": "^6.24.1",
+    "source-map-loader": "^0.2.1",
+    "webpack": "^2.6.1"
+  }
+}
