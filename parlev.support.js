@@ -35,6 +35,10 @@
               			"module": "parlev",
               			"author": "Richeve S. Bebedor",
               			"eMail": "richeve.bebedor@gmail.com",
+              			"contributors": [
+              				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+              				"Vinse Vinalon"
+              			],
               			"repository": "https://github.com/volkovasystems/parlev.git",
               			"test": "parlev-test.js",
               			"global": true
