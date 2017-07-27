@@ -1,34 +1,34 @@
 {
-  "name": "parlev",
-  "version": "0.2.0",
-  "description": "Argument leveling.",
-  "main": "parlev.deploy.js",
-  "support": "parlev.support.js",
-  "authors": [
-    "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-    "Vinse Vinalon"
-  ],
-  "license": "MIT",
-  "keywords": [
-    "argument",
-    "leveling",
-    "parlev"
-  ],
-  "homepage": "https://github.com/volkovasystems/parlev",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "arid": "^0.26.0",
-    "arkount": "^0.8.0",
-    "doubt": "^0.27.0",
-    "falzy": "^0.20.0",
-    "firs": "^0.1.0",
-    "raze": "^0.30.0"
-  }
+	"name": "parlev",
+	"version": "0.3.0",
+	"description": "Argument leveling.",
+	"main": "parlev.deploy.js",
+	"support": "parlev.support.js",
+	"authors": [
+		"Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+		"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+		"Vinse Vinalon <vinsevinalon@gmail.com>"
+	],
+	"license": "MIT",
+	"keywords": [
+		"argument",
+		"leveling",
+		"parlev"
+	],
+	"homepage": "https://github.com/volkovasystems/parlev",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies": {
+		"arid": "^0.30.0",
+		"arkount": "^0.12.0",
+		"doubt": "^0.34.0",
+		"falzy": "^0.23.0",
+		"firs": "^0.4.0",
+		"raze": "^0.34.0"
+	}
 }
