@@ -18,10 +18,12 @@
 		<script type="application/javascript">
 			QUnit.test( "parlev unit test", function( assert ) {
 
-				assert.deepEqual( parlev( [ [ 1, 2, 3 ] ] ), [ 1, 2, 3 ], "should be deeply equal" );
+				assert.deepEqual( parlev( [ [ 1, 2, 3 ] ] ),
+					[ 1, 2, 3 ], "should be equal to [ 1, 2, 3 ]" );
 
-				assert.deepEqual( parlev( [ [ 1, 2, 3 ], 1, 2, 3 ] ), [ [ 1, 2, 3 ], 1, 2, 3 ], "should be deeply equal" );
-				
+				assert.deepEqual( parlev( [ [ 1, 2, 3 ], 1, 2, 3 ] ), [ [ 1, 2, 3 ], 1, 2, 3 ],
+					"should be equal to [ [ 1, 2, 3 ], 1, 2, 3 ]" );
+
 			} );
 		</script>
 	</body>
