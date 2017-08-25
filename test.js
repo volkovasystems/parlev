@@ -66,10 +66,25 @@ const parlev = require( "./parlev.js" );
 
 describe( "parlev", ( ) => {
 
+	describe( "`parlev( [ [ 1, 2, 3 ] ] )`", ( ) => {
+		it( "should be equal to [ 1, 2, 3 ]", ( ) => {
+
+			assert.deepEqual( parlev( [ [ 1, 2, 3 ] ] ), [ 1, 2, 3 ] );
+
+		} );
+	} );
+
+	describe( "`parlev( [ [ 1, 2, 3 ], 1, 2, 3 ] )`", ( ) => {
+		it( "should be equal to [ [ 1, 2, 3 ], 1, 2, 3 ]", ( ) => {
+
+			assert.deepEqual( parlev( [ [ 1, 2, 3 ], 1, 2, 3 ] ), [ [ 1, 2, 3 ], 1, 2, 3 ] );
+
+		} );
+	} );
+
 } );
 
 //: @end-server
-
 
 
 

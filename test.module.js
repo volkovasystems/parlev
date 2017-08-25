@@ -70,6 +70,22 @@ const path = require( "path" );
 
 describe( "parlev", ( ) => {
 
+	describe( "`parlev( [ [ 1, 2, 3 ] ] )`", ( ) => {
+		it( "should be equal to [ 1, 2, 3 ]", ( ) => {
+
+			assert.deepEqual( parlev( [ [ 1, 2, 3 ] ] ), [ 1, 2, 3 ] );
+
+		} );
+	} );
+
+	describe( "`parlev( [ [ 1, 2, 3 ], 1, 2, 3 ] )`", ( ) => {
+		it( "should be equal to [ [ 1, 2, 3 ], 1, 2, 3 ]", ( ) => {
+
+			assert.deepEqual( parlev( [ [ 1, 2, 3 ], 1, 2, 3 ] ), [ [ 1, 2, 3 ], 1, 2, 3 ] );
+
+		} );
+	} );
+
 } );
 
 //: @end-server
@@ -79,15 +95,63 @@ describe( "parlev", ( ) => {
 
 describe( "parlev", ( ) => {
 
+	describe( "`parlev( [ [ 1, 2, 3 ] ] )`", ( ) => {
+		it( "should be equal to [ 1, 2, 3 ]", ( ) => {
+
+			assert.deepEqual( parlev( [ [ 1, 2, 3 ] ] ), [ 1, 2, 3 ] );
+
+		} );
+	} );
+
+	describe( "`parlev( [ [ 1, 2, 3 ], 1, 2, 3 ] )`", ( ) => {
+		it( "should be equal to [ [ 1, 2, 3 ], 1, 2, 3 ]", ( ) => {
+
+			assert.deepEqual( parlev( [ [ 1, 2, 3 ], 1, 2, 3 ] ), [ [ 1, 2, 3 ], 1, 2, 3 ] );
+
+		} );
+	} );
 
 } );
 
 //: @end-client
 
-
 //: @bridge:
 
 describe( "parlev", ( ) => {
+
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
+
+	describe( "`parlev( [ [ 1, 2, 3 ] ] )`", ( ) => {
+		it( "should be equal to [ 1, 2, 3 ]", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return JSON.stringify( parlev( [ [ 1, 2, 3 ] ] ) );
+				}
+
+			).value;
+			//: @end-ignore
+			assert.deepEqual( JSON.parse( result ), [ 1, 2, 3 ] );
+
+		} );
+	} );
+
+	describe( "`parlev( [ [ 1, 2, 3 ], 1, 2, 3 ] )`", ( ) => {
+		it( "should be equal to [ [ 1, 2, 3 ], 1, 2, 3 ]", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return JSON.stringify( parlev( [ [ 1, 2, 3 ], 1, 2, 3 ] ) );
+				}
+
+			).value;
+			//: @end-ignore
+			assert.deepEqual( JSON.parse( result ), [ [ 1, 2, 3 ], 1, 2, 3 ] );
+
+		} );
+	} );
 
 } );
 

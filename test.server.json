@@ -1,16 +1,46 @@
 {
-  "stats": {
-    "suites": 0,
-    "tests": 0,
-    "passes": 0,
-    "pending": 0,
-    "failures": 0,
-    "start": "2017-08-10T11:28:36.150Z",
-    "end": "2017-08-10T11:28:36.150Z",
-    "duration": 0
-  },
-  "tests": [],
-  "pending": [],
-  "failures": [],
-  "passes": []
+	"stats": {
+		"suites": 3,
+		"tests": 2,
+		"passes": 2,
+		"pending": 0,
+		"failures": 0,
+		"start": "2017-08-25T07:07:25.002Z",
+		"end": "2017-08-25T07:07:25.011Z",
+		"duration": 9
+	},
+	"tests": [
+		{
+			"title": "should be equal to [ 1, 2, 3 ]",
+			"fullTitle": "parlev `parlev( [ [ 1, 2, 3 ] ] )` should be equal to [ 1, 2, 3 ]",
+			"duration": 3,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to [ [ 1, 2, 3 ], 1, 2, 3 ]",
+			"fullTitle": "parlev `parlev( [ [ 1, 2, 3 ], 1, 2, 3 ] )` should be equal to [ [ 1, 2, 3 ], 1, 2, 3 ]",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		}
+	],
+	"pending": [],
+	"failures": [],
+	"passes": [
+		{
+			"title": "should be equal to [ 1, 2, 3 ]",
+			"fullTitle": "parlev `parlev( [ [ 1, 2, 3 ] ] )` should be equal to [ 1, 2, 3 ]",
+			"duration": 3,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to [ [ 1, 2, 3 ], 1, 2, 3 ]",
+			"fullTitle": "parlev `parlev( [ [ 1, 2, 3 ], 1, 2, 3 ] )` should be equal to [ [ 1, 2, 3 ], 1, 2, 3 ]",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		}
+	]
 }

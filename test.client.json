@@ -1,0 +1,116 @@
+{
+	"state": {
+		"passed": 2,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-08-25T07:07:26.381Z",
+	"end": "2017-08-25T07:08:01.790Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "parlev",
+			"duration": 0,
+			"start": "2017-08-25T07:08:01.449Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "parlev",
+			"duration": 182,
+			"start": "2017-08-25T07:08:01.449Z",
+			"end": "2017-08-25T07:08:01.631Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-08-25T07:08:01.451Z",
+					"end": "2017-08-25T07:08:01.451Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "parlev",
+					"associatedTest": "should be equal to [ 1, 2, 3 ]"
+				},
+				{
+					"start": "2017-08-25T07:08:01.562Z",
+					"end": "2017-08-25T07:08:01.563Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "parlev",
+					"associatedTest": "should be equal to [ 1, 2, 3 ]"
+				},
+				{
+					"start": "2017-08-25T07:08:01.564Z",
+					"end": "2017-08-25T07:08:01.564Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "parlev",
+					"associatedTest": "should be equal to [ [ 1, 2, 3 ], 1, 2, 3 ]"
+				},
+				{
+					"start": "2017-08-25T07:08:01.631Z",
+					"end": "2017-08-25T07:08:01.631Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "parlev",
+					"associatedTest": "should be equal to [ [ 1, 2, 3 ], 1, 2, 3 ]"
+				},
+				{
+					"start": "2017-08-25T07:08:01.631Z",
+					"end": "2017-08-25T07:08:01.631Z",
+					"duration": 0,
+					"title": "\"after all\" hook",
+					"associatedSuite": "parlev"
+				}
+			]
+		},
+		{
+			"name": "`parlev( [ [ 1, 2, 3 ] ] )`",
+			"duration": 113,
+			"start": "2017-08-25T07:08:01.450Z",
+			"end": "2017-08-25T07:08:01.563Z",
+			"tests": [
+				{
+					"name": "should be equal to [ 1, 2, 3 ]",
+					"start": "2017-08-25T07:08:01.450Z",
+					"end": "2017-08-25T07:08:01.562Z",
+					"duration": 112,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`parlev( [ [ 1, 2, 3 ], 1, 2, 3 ] )`",
+			"duration": 67,
+			"start": "2017-08-25T07:08:01.564Z",
+			"end": "2017-08-25T07:08:01.631Z",
+			"tests": [
+				{
+					"name": "should be equal to [ [ 1, 2, 3 ], 1, 2, 3 ]",
+					"start": "2017-08-25T07:08:01.564Z",
+					"end": "2017-08-25T07:08:01.631Z",
+					"duration": 67,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}
